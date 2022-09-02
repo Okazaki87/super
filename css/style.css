@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+    background: #f1f1f1;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    color: #0f141e;
+}
+
+
+/*центрулируем сайт */
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0px; 
+    padding-top: 10px ;/*отступы сверху*/
+    padding-bottom: 10px;
+}
+
+/*стиль для аватарки */
+.avatar {
+    box-shadow: 4px 4px 14px rgba(28, 40, 216, 0.25);
+    border: 1px solid gray;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 400px)
+{
+    .info {
+        display: block;
+        text-align: center;
+    }
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;   
+}
+
+.info-text {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.info-text p {
+    font-style:italic;
+    font-weight: bold;
+    color: #86898f;
+    margin: 0;
+    
+}
+
+
+.info-text h4 {
+    margin-bottom: 10px;
+}
+
+
+
+.card {
+/*border: 1px solid black;*границы рамок*/
+border-radius: 20px;
+/*background: white;*/
+
+padding: 15px 20px; /* отступы вверх и низ */
+margin-bottom: 20px; /* отступы между блоками*/
+
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+
+.bg-yellow {
+background: #fff9dc ;
+}
+
+.bg-red {
+    background: #ffe5e5 ;
+    }
+
+.bg-green {
+    background: #e5ffe7 ;
+}
+
+
+
+
+
+
+
+
+/*----------------ссылки и псевдоселекторы------------------*/
+
+
+/*стиль для ссылок общий*/
+a {
+    color: #5b5c5c;
+    text-decoration: none;
+}
+
+
+/*Цвет ссылки после посещение*/
+a:visited {
+
+    color: rgb(122, 122, 122);
+}
+
+/*цвет ссылки при наведении*/
+a:hover {
+    color: rgb(0, 4, 255);
+    text-decoration: underline;
+} 
+
+
+/*цвет ссылки на нажатие ссылки */
+a:active {
+
+    color: rgb(44, 121, 0);
+   
+   }
+
+/*стиль для кнопок*/
+.btn {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.btn:hover {
+    background: #86898f;
+    cursor: pointer; 
+}
+
+
+/*------------Таблицы и списки------------*/
+
+
+.list {
+    padding: 0 20px;
+}
+
+.list li {
+    color: #86898f;
+    margin-bottom: 10px; /*пространство между элементами*/
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+
+.link-list li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.table {
+    width:100%;
+    text-align: center; /*выравнивание по центру*/
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+/*цвет ячеек в таблице*/
+
+.table td:nth-child(2),
+       td:nth-child(3) {
+    color:#86898f;
+
+}
+
+
+/*----display. Inline & Block & Inline-block----*/
+
+
+.form h2 {
+    text-align: center; /*текс по центру*/
+}
+
+.form-row {
+ margin-bottom: 10px ;
+ display: flex; /*делаем столбцы*/
+}
+
+/* делаем выравнивание в стобцы*/
+.form-row .form-group {
+    margin-right: 20px;
+    width: 50%;
+  /*  width: calc(50% - 20px);*/
+  /* display: inline-block;*/
+}
+
+.form-row .form-group:last-child{
+    margin-right: 0;
+
+
+}
+
+@media(max-width: 500px) {
+    .form-row {
+        display: block;
+    }
+    .form-row.form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/*меняем текст*/
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+}
+/*меняем формы */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent; /*прозрачный цвет*/
+    border-bottom: 1px solid #ccc;
+    color: black;
+    padding: 15px 0 10px; /*отступы*/
+    outline: none; /*убераем линию при вводе*/
+    font-family: inherit; /*меняем шрифт*/
+}
+

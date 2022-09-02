@@ -4,34 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Resume</title>
+   
 </head>
 <body>
-    <img src="images/i_am.jpg" width="200" alt="Эрик Колотка">
-   <h1>Эрик Картмен</h1> 
+        <div class="container"> 
+        <div class="info">
+    <img class="avatar" src="images/i_am.jpg"  alt="Эрик Колотка">
+    <div class="info-text">
+   <h1 >Эрик Картмен</h1> 
    <p> Мне 34 года, работаю менеджером <strong></strong></p>
    <p>Увлекаюсь <em>фитнесом, фотографией, автомобилями</em></p>
    <h4>Список социальных сетей</h4>
    <a href="https://vk.com/id6638503" target="_blank">вконтакте</a>
    
-   <a href="https://vk.com/id6638503" target="_blank">инстаграм</a>
+   <a href="instagram.com/okazaki_tomoyasan" target="_blank">инстаграм</a>
    
-   <a href="https://vk.com/id6638503" target="_blank">ютубе</a>
+   <a href="https://www.youtube.com/channel/UCt6g2oghUb4Da_MCti7BpAA" target="_blank">ютубе</a>
+</div>
+</div>
+        
+
+ <div class="card bg-green ">
    <H2>Мои хобби</H2>
-   <OL>
+
+   <OL class="list">
+
     <li>Спорт</li>
     <LI>Музыка</LI>
     <li>Ютуб</li>
     <li>Путешествия</li>
    </OL>
+
+</div>
+    
+   <div class="card bg-yellow">
+
    <h2>Опыт работы</h2>
-   <table>
-    <thed>
+
+   
+   <table class="table"> 
+
+   <!-- <thed>
         <tr>
         <th>Название</th>
         <th>Должность</th>
         <th>Год</th>
     </thed>
+-->
     </tr>
     <tbody>
     <tr>
@@ -56,26 +77,43 @@
     </tr>
     </tbody>
    </table>
-   <h2>Связаться со мной</h2>
-<form action="/">
+</div>
 
-   <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя">
-   </div>
-   <div>
+<div class="card bg-red">
+    <H2> Мои курсы</H2>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Введите email">
-   </div>
-   <div>
+   <ul class="link-list">
+   <li><a href="#">Получение профессии Fronted разработчика</a></li>
+   <li><a href="#">Все курсы</a></li>
 
-        <label for="message">Сообщение:</label>
-        <br>
-        <textarea name="message" id="" cols="30" rows="5" placeholder="Введите сообщение"></textarea>
-   </div>
-   <input type="submit" value="Отправить">
+</ul>
+</div>
+
+
+<form action="/" class="form">
+    <h2>Связаться со мной</h2>
+   
+        <div class="form-row">
+        <div class="form-group">
+            
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" placeholder="Введите имя">
+        </div>
+        <div class="form-group">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Введите email">
+        </div>
+    </div>
+    <div class="form-group">
+
+            <label for="message">Сообщение:</label>
+            <br>
+            <textarea name="message" id="" cols="30" rows="5" placeholder="Введите сообщение"></textarea>
+   
+</div>
+   <input type="submit" class="btn" value="Отправить"></a>
 </form>
-
+</div>
 </body>
 </html>
